@@ -46,21 +46,69 @@ font-weight: bold;
     flex-direction: column;
   }
 
-.section2 .articlecontents .topic {
+  .section2 .articlecontents .keeppracticing {
+    flex-basis: 60%;
+    flex-grow: 6;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .section2 .articlecontents .keeppracticing h1 {
+    margin-top: 32px;
+    margin-bottom: 24px;
+
+  }
+
+.section2 .articlecontents .topics {
     padding:16px;
     margin-bottom:48px;
+    flex-basis: 40%;
+    flex-grow: 4;
+    border-left: solid 1px;
   }
 
-
+  .section2 .articlecontents .topic {
+      padding:16px;
+      margin-bottom:1px;
+      flex-basis: 40%;
+      display: flex;
+      align-items: center;
+    }
 .section2 .articlecontents .detail {
     margin: 16px;
+    width: 65%;
   }
 
-.section2 .keeppracticing {
+  .section2 .articlecontents img {
+      height: auto;
+      width: 40%;
+    }
+
+.keeppracticing {
+  flex-basis:60%;
+  flex-grow:6;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.keeppracticing img {
+  width: 60%;
+  height; auto;
+}
+
+.section2 .articlecontents .keeppracticing h1 {
+  margin-top:32px;
+  margin-bottom:24px;
 }
 
 .section2 .articlecontents .detail {
   margin: 16px;
+}
+
+.section2 .articlecontents .topics {
+  flex-basis:40%;
+  flex-grow:4;
+  border-left: solid 1px #694f44;
 }
 
 .gladwell {
