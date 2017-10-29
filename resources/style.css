@@ -1,0 +1,206 @@
+
+
+
+header {
+display: flex;
+font-family: Verdana;
+font-size: 14px;
+font-weight: bold;
+}
+
+.logo {
+  display: flex;
+}
+
+
+#banner {
+  background-image: url('./banner.jpg');
+  background-size: cover;
+  margin-top: 25px;
+  height: 500px;
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.button {
+
+
+}
+
+/*article section*/
+
+.article {
+  padding-top: 32px;
+  padding-bottom:32px;
+}
+
+.text {
+
+
+}
+
+
+.section2 .articlecontents .topics {
+    display:flex;
+    flex-direction: column;
+  }
+
+.section2 .articlecontents .topic {
+    padding:16px;
+    margin-bottom:48px;
+  }
+
+
+.section2 .articlecontents .detail {
+    margin: 16px;
+  }
+
+.section2 .keeppracticing {
+}
+
+.section2 .articlecontents .detail {
+  margin: 16px;
+}
+
+.gladwell {
+  font-size: 0.9em;
+  margin-top:1em;
+}
+
+.topics {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    flex-wrap: wrap;
+  }
+
+
+
+.exhibits {
+  display:flex;
+  flex-direction: column;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+
+.titleexhibit {
+  margin: 16px;
+  margin-bottom:48px;
+
+}
+
+.infoexhibit {
+  margin: 16px;
+  margin-bottom:48px;
+
+}
+
+
+.section4 {
+
+}
+
+
+/*classes*/
+
+
+  .classwrap {
+    padding: 0 16px;
+    margin-bottom: 32px;
+  }
+
+.classcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.class {
+padding: 4px;
+}
+
+.classwrap .class img {
+  width: 100%;
+  height: auto;
+}
+
+.classwrap h1 {
+  text-align: center;
+}
+
+.item span {
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  padding: 5px;
+}
+
+.classinfo {
+  display: block;
+  margin: 16px;
+  width: 65%;
+  margin-left: 16px;
+}
+
+
+.classwrap .classcontainer {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-top: 32px;
+}
+
+.classwrap .class img {
+  height:auto;
+  width: 100%;
+}
+
+.classwrap .class .classinfo {
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom:24px;
+}
+
+.classwrap .class {
+  min-width:265px;
+  flex-basis: 25%;
+  flex-grow:1;
+  margin-left: 16px;
+  margin-right: 16px;
+  background-color: white;
+  margin-bottom: 32px;
+}
+
+.classwrap h1 {
+  text-align:center;
+}
+
+
+
+/*footer*/
+
+footer {
+  padding: 16px 24px;
+  display:flex;
+}
+footer .footer {
+  width: 100%;
+}
+
+@media only screen and (min-width:481px) {
+footer {
+  border-top: solid 1px #694f44;
+}
+footer .footerlinks {
+  width: 8em;
+  float:right;
+}
+footer ul {
+  list-style:none;
+  display:flex;
+  justify-content: flex-end;
+}
+footer ul li {
+  margin-left: 16px;
+}
