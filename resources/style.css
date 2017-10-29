@@ -113,14 +113,20 @@ font-weight: bold;
 .classcontainer {
   display: flex;
   justify-content: center;
+  align-items: baseline;
+  flex-flow: row;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .class {
 padding: 4px;
+flex-flow: column;
+justify-content: center;
 }
 
 .classwrap .class img {
-  width: 100%;
+  width: 75%;
   height: auto;
 }
 
