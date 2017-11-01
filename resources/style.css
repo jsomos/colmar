@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
-
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
 
 html {
   font-size 16px;
@@ -28,13 +28,49 @@ font-weight: bold;
 
 .logoimage {
   padding-left: .1rem;
+  padding-top: 9px;
 }
 
 .colmar {
   font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-family: 'Reem Kufi', sans-serif;
+  font-weight: bold;
 }
+
+/*start mobile nav*/
+
+@media only screen and (max-width: 400px) {
+    .navigation li {
+    display: none;
+    }
+
+    .logo span {
+      display: none;
+    }
+
+    .logo img {
+      display: none;
+    }
+
+    .banner {
+        width: 90%;
+    }
+
+    .mobilenav img {
+        width: 50%;
+        display: flex;
+    }
+    .mobilenav img {
+        width: 90%;
+        justify-content: space-around;
+    }
+
+.links .navigation {
+  display: none;
+}
+
+}
+/*end mobile nav*/
 
 
 nav ul {
@@ -57,23 +93,14 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #000000;
+    cursor:pointer;
 }
 
 
-.learn h1 {
-  font-size: 55px;
-  color: #A9A9A9;
-  padding-left: 20px;
-}
-
-.learn h2 {
-  color: white;
-  padding-left: 20px;
-}
+/*Banner*/
 
 .button {
 padding-left: 20px;
-
 }
 
 .banner-img {
@@ -83,6 +110,8 @@ padding-left: 20px;
 
 .banner-img img {
   width: 100%;
+  -webkit-box-shadow: 2px 2px 15px 5px #000000;
+  box-shadow: 2px 2px 15px 5px #000000;
 }
 
 .banner {
@@ -95,36 +124,46 @@ padding-left: 20px;
   padding-right: 3rem;
 }
 
-     .banner h1 {
-         font-size: 2.8rem;
-         font-weight: bold !important;
-         color: #4A4A4A;
-     }
+.banner h1 {
+  font-size: 3.5rem;
+  font-weight: bold !important;
+  color: #4A4A4A;
+  padding-left: 20px;
+}
 
-     .banner h2 {
-         font-size: 1.5rem;
-         color: #4A4A4A;
-         font-weight: 600;
-         letter-spacing: 1px;
-     }
+.banner h2 {
+  font-size: 1.5rem;
+  color: #4A4A4A;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-left: 20px;
+}
 
-     .banner button {
-         width: 100%;
-         background: #4A4A4A;
-         color: white;
-         padding: 1rem 0;
-         border: none;
-         margin-top: 1rem;
-         font-size: 1.2rem;
-     }
+.banner button {
+  width: 100%;
+  background: #4A4A4A;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  transition: background-color 0.8s;
+  padding: 1rem 0;
+  border: none;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius:8px;
+}
 
-     .banner button:hover {
-        background: #deb887;
-         cursor: pointer;
-     }
+.banner button:hover {
+  background: #deb887;
+  cursor: pointer;
+  background-color: Seagreen;
+}
 
 
-/*article section*/
+.mobilenav {
+  display: none;
+}
+
+/*Articles*/
 
 .flex-box {
   display: flex;
@@ -139,11 +178,6 @@ padding-left: 20px;
 
 }
 
-.keeppracticing img {
-  width: 60%;
-  height; auto;
-}
-
 
 .gladwell {
   font-size: 0.9em;
@@ -153,10 +187,12 @@ padding-left: 20px;
 .articlecontents {
   width: 60%;
   margin-left: .5rem;
+  padding: 4px;
 }
 
 .keeppracticing img {
   width: 100%;
+  height; auto;
 }
 
 .topiccontent {
@@ -165,13 +201,9 @@ padding-left: 20px;
 
 .topiccontent h1 {
   margin: 2rem 0 1.5rem 0;
-  font-size: 2.4rem;
+  font-size: 3.5rem;
+  font-weight: bold !important;
   color: #4A4A4A;
-}
-
-.topiccontent small {
-  display: block;
-  padding: 2rem 0;
 }
 
 .topiccontent p {
@@ -180,34 +212,34 @@ padding-left: 20px;
   font-size: 1.5rem;
 }
 
-.mobile-img {
-  display: none;
+.detail {
+  flex-direction: column;
+  width: 65%;
+  color: #4A4A4A;
+  padding-left: 2rem;
+  justify-content: center;
 }
 
-    .detail {
-        flex-direction: column;
-        width: 65%;
-        padding-left: 2rem;
-        justify-content: center;
-    }
+.classimage {
+  padding: 2rem 0 1rem 1.5rem;
+}
 
-    .classimage {
-        padding: 2rem 0 1rem 1.5rem;
-    }
+.classimage img {
+  width: 100%;
+  height: auto;
+}
 
-    .classimage img {
-        width: 100%;
-        height: auto;
-    }
+.topics article {
+  background-color: white;
+}
 
-
-/*classes*/
+/*Classes*/
 
 
-  .classwrap {
-    padding: 0 16px;
-    margin-bottom: 32px;
-  }
+.classwrap {
+  padding: 0 16px;
+  margin-bottom: 32px;
+}
 
 .classcontainer {
   display: flex;
@@ -222,6 +254,7 @@ padding-left: 20px;
 padding: 4px;
 flex-flow: column;
 justify-content: center;
+color: #4A4A4A;
 }
 
 .classwrap .class img {
@@ -231,13 +264,9 @@ justify-content: center;
 
 .classwrap h1 {
   text-align: center;
-}
-
-.item span {
-  font-weight: bold;
-  text-align: center;
-  display: block;
-  padding: 5px;
+  font-size: 3.5rem;
+  font-weight: bold !important;
+  color: #4A4A4A;
 }
 
 .classinfo {
@@ -246,7 +275,6 @@ justify-content: center;
   width: 65%;
   margin-left: 16px;
 }
-
 
 .classwrap .classcontainer {
   display:flex;
@@ -281,7 +309,12 @@ justify-content: center;
   text-align:center;
 }
 
-/*thesis*/
+.classcontainer div:hover {
+  background: #deb887;
+  cursor: pointer;
+}
+
+/*Thesis*/
 
 
 .exhibits {
@@ -291,9 +324,9 @@ justify-content: center;
 
 .exhibits h1 {
   margin: 2rem 0 1.5rem 0;
-  font-size: 2.4rem;
   color: #4A4A4A;
-  font-weight: bold;
+  font-size: 3.5rem;
+  font-weight: bold !important;
 }
 
 .exhibits-container {
@@ -320,22 +353,11 @@ justify-content: center;
     width: 100%;
 }
 
-.titleexhibit {
-  margin: 16px;
-  margin-bottom:48px;
-
-}
-
-.infoexhibit {
-  margin: 16px;
-  margin-bottom:48px;
-
-}
-
 .topics {
     flex-direction: column;
     margin-left: 1.5rem;
     width: 40%;
+    padding: 4px;
 }
 
 .video-container {
@@ -368,9 +390,15 @@ justify-content: center;
 
 .topics article:hover {
     background: #deb887;
+    cursor: pointer;
 }
 
-/*footer*/
+.topics div:hover {
+    background: #deb887;
+    cursor: pointer;
+}
+
+/*Footer*/
 
 footer {
   padding: 16px 24px;
@@ -384,15 +412,17 @@ footer .footer {
 footer {
   border-top: solid 1px #694f44;
 }
-footer .footerlinks {
+.footerlinks p {
   width: 8em;
   float:right;
 }
-footer ul {
+.footerlinks ul {
   list-style:none;
   display:flex;
   justify-content: flex-end;
 }
-footer ul li {
+.footerlinks ul li {
   margin-left: 16px;
+  text-decoration: none;
+}
 }
